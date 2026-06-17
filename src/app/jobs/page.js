@@ -12,8 +12,8 @@ export default async function JobsPage({ searchParams }) {
         className="min-h-screen bg-[#f8fafc]"
         style={{ paddingTop: "80px", paddingBottom: "80px" }}
       >
-        <div className="mx-auto" style={{ maxWidth: "1224px" }}>
-          <div style={{ marginBottom: "40px" }}>
+        <div className="cc-page-container mx-auto" style={{ maxWidth: "1224px" }}>
+          <div className="cc-page-header" style={{ marginBottom: "40px" }}>
             <h1
               className="font-extrabold leading-tight text-[#0f172a]"
               style={{ fontSize: "48px" }}

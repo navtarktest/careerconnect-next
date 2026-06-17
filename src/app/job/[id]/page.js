@@ -74,7 +74,7 @@ function JobDetails() {
       <Navbar />
 
       <main
-        className="mx-auto flex justify-center"
+        className="cc-page-container mx-auto flex justify-center"
         style={{
           maxWidth: "1224px",
           paddingTop: "80px",
@@ -82,7 +82,7 @@ function JobDetails() {
         }}
       >
         <article
-          className="border border-gray-200 bg-white shadow-xl shadow-gray-200/80"
+          className="cc-page-card cc-job-details-card border border-gray-200 bg-white shadow-xl shadow-gray-200/80"
           style={{
             width: "860px",
             borderRadius: "22px",

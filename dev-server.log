@@ -1,0 +1,25 @@
+
+> careerconnect-next@0.1.0 dev
+> next dev --port 3000
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.7:3000
+✓ Ready in 1316ms
+
+ GET / 200 in 976ms (next.js: 264ms, application-code: 711ms)
+ GET / 200 in 128ms (next.js: 7ms, application-code: 121ms)
+ GET /login 200 in 112ms (next.js: 61ms, application-code: 51ms)
+ GET /jobs 200 in 233ms (next.js: 125ms, application-code: 108ms)
+ GET / 200 in 201ms (next.js: 14ms, application-code: 187ms)
+ GET / 200 in 185ms (next.js: 13ms, application-code: 172ms)
+ GET /applications 200 in 78ms (next.js: 43ms, application-code: 34ms)
+ GET /jobs 200 in 65ms (next.js: 4ms, application-code: 62ms)
+✓ Compiled in 542ms
+ GET /jobs 200 in 79ms (next.js: 7ms, application-code: 72ms)
+ GET /login 200 in 40ms (next.js: 5ms, application-code: 34ms)
+ GET / 200 in 179ms (next.js: 10ms, application-code: 168ms)
+ GET / 200 in 94ms (next.js: 6ms, application-code: 88ms)
+ GET /post-job 200 in 341ms (next.js: 303ms, application-code: 38ms)
+ GET /employer-dashboard 200 in 2.1s (next.js: 589ms, application-code: 1474ms)
+ GET /login 200 in 38ms (next.js: 7ms, application-code: 30ms)

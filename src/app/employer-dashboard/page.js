@@ -98,7 +98,7 @@ function EmployerDashboard() {
       <Navbar />
 
       <main
-        className="mx-auto"
+        className="cc-page-container mx-auto"
         style={{
           maxWidth: "1224px",
           paddingTop: "82px",
@@ -107,7 +107,7 @@ function EmployerDashboard() {
       >
 
         {/* Heading */}
-        <div style={{ marginBottom: "50px" }}>
+        <div className="cc-page-header" style={{ marginBottom: "50px" }}>
 
           <h1
             className="font-extrabold leading-tight text-[#0f172a]"
@@ -133,7 +133,7 @@ function EmployerDashboard() {
         <div style={{ marginBottom: "56px" }}>
 
           <div
-            className="bg-white shadow-lg shadow-gray-200/70"
+            className="cc-stat-card bg-white shadow-lg shadow-gray-200/70"
             style={{ width: "384px", borderRadius: "22px", padding: "30px" }}
           >
 
@@ -168,7 +168,7 @@ function EmployerDashboard() {
         ) : jobs.length === 0 ? (
 
           <div
-            className="bg-white text-center text-2xl font-bold text-gray-500 shadow-lg shadow-gray-200/70"
+            className="cc-page-card bg-white text-center text-2xl font-bold text-gray-500 shadow-lg shadow-gray-200/70"
             style={{ borderRadius: "22px", padding: "48px" }}
           >
 
@@ -184,11 +184,11 @@ function EmployerDashboard() {
 
               <div
                 key={job.id}
-                className="border border-gray-200 bg-white shadow-lg shadow-gray-200/70"
+                className="cc-page-card border border-gray-200 bg-white shadow-lg shadow-gray-200/70"
                 style={{ borderRadius: "22px", padding: "30px" }}
               >
 
-                <div className="flex items-center justify-between gap-8">
+                <div className="cc-dashboard-job-row flex items-center justify-between gap-8">
 
                   <div>
 
@@ -231,7 +231,7 @@ function EmployerDashboard() {
 
                   </div>
 
-                  <div className="flex items-center" style={{ gap: "16px" }}>
+                  <div className="cc-dashboard-actions flex items-center" style={{ gap: "16px" }}>
                     <Link
                       href={`/edit-job/${job.id}`}
                       className="flex items-center justify-center font-bold text-white transition"

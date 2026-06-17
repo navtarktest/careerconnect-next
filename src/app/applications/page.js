@@ -42,14 +42,14 @@ function Applications() {
       <Navbar />
 
       <main
-        className="mx-auto"
+        className="cc-page-container mx-auto"
         style={{
           maxWidth: "920px",
           paddingTop: "72px",
           paddingBottom: "80px",
         }}
       >
-        <div style={{ marginBottom: "42px" }}>
+        <div className="cc-page-header" style={{ marginBottom: "42px" }}>
           <h1
             className="font-extrabold leading-tight text-[#0f172a]"
             style={{ fontSize: "48px" }}
@@ -68,7 +68,7 @@ function Applications() {
           <div className="text-2xl font-bold text-[#0f172a]">Loading...</div>
         ) : applications.length === 0 ? (
           <div
-            className="border border-gray-200 bg-white text-center text-2xl font-bold text-gray-500 shadow-lg shadow-gray-200/70"
+            className="cc-page-card border border-gray-200 bg-white text-center text-2xl font-bold text-gray-500 shadow-lg shadow-gray-200/70"
             style={{ borderRadius: "22px", padding: "48px" }}
           >
             No Applications Found
@@ -78,7 +78,7 @@ function Applications() {
             {applications.map((application) => (
               <div
                 key={application.id}
-                className="border border-gray-200 bg-white shadow-lg shadow-gray-200/70"
+                className="cc-page-card border border-gray-200 bg-white shadow-lg shadow-gray-200/70"
                 style={{ borderRadius: "22px", padding: "30px" }}
               >
                 <h2

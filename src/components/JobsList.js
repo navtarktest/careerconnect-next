@@ -40,11 +40,11 @@ export default function JobsList({ search = "", location = "" }) {
   return (
     <section>
       <div
-        className="bg-white shadow-xl shadow-gray-200/80 ring-1 ring-gray-100"
+        className="cc-job-filter bg-white shadow-xl shadow-gray-200/80 ring-1 ring-gray-100"
         style={{ marginBottom: "55px", borderRadius: "22px", padding: "24px" }}
       >
         <div
-          className="grid"
+          className="cc-job-filter-grid grid"
           style={{ gap: "20px", gridTemplateColumns: "1fr 1fr 1fr 280px" }}
         >
           <input
@@ -101,7 +101,7 @@ export default function JobsList({ search = "", location = "" }) {
         </div>
       ) : (
         <div
-          className="grid"
+          className="cc-jobs-grid grid"
           style={{ gap: "32px", gridTemplateColumns: "repeat(3, minmax(0, 1fr))" }}
         >
           {filteredJobs.map((job) => (

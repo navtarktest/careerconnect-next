@@ -48,14 +48,14 @@ function JobApplicants() {
       <Navbar />
 
       <main
-        className="mx-auto"
+        className="cc-page-container mx-auto"
         style={{
           maxWidth: "920px",
           paddingTop: "72px",
           paddingBottom: "80px",
         }}
       >
-        <div style={{ marginBottom: "42px" }}>
+        <div className="cc-page-header" style={{ marginBottom: "42px" }}>
           <h1
             className="font-extrabold leading-tight text-[#0f172a]"
             style={{ fontSize: "48px" }}
@@ -74,7 +74,7 @@ function JobApplicants() {
           <div className="text-2xl font-bold text-[#0f172a]">Loading...</div>
         ) : applicants.length === 0 ? (
           <div
-            className="border border-gray-200 bg-white text-center text-2xl font-bold text-gray-500 shadow-lg shadow-gray-200/70"
+            className="cc-page-card border border-gray-200 bg-white text-center text-2xl font-bold text-gray-500 shadow-lg shadow-gray-200/70"
             style={{ borderRadius: "22px", padding: "48px" }}
           >
             No Applicants Yet
@@ -84,7 +84,7 @@ function JobApplicants() {
             {applicants.map((applicant) => (
               <div
                 key={applicant.id}
-                className="border border-gray-200 bg-white shadow-lg shadow-gray-200/70"
+                className="cc-page-card border border-gray-200 bg-white shadow-lg shadow-gray-200/70"
                 style={{ borderRadius: "22px", padding: "30px" }}
               >
                 <h2

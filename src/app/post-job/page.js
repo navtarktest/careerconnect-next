@@ -74,7 +74,7 @@ function PostJob() {
       <Navbar />
 
       <main
-        className="mx-auto"
+        className="cc-form-page-container mx-auto"
         style={{
           maxWidth: "760px",
           paddingTop: "72px",
@@ -82,10 +82,10 @@ function PostJob() {
         }}
       >
         <div
-          className="border border-gray-200 bg-white shadow-xl shadow-gray-200/80"
+          className="cc-form-card border border-gray-200 bg-white shadow-xl shadow-gray-200/80"
           style={{ borderRadius: "22px", padding: "36px" }}
         >
-          <div style={{ marginBottom: "38px" }}>
+          <div className="cc-form-header" style={{ marginBottom: "38px" }}>
             <h1
               className="font-extrabold leading-tight text-[#0f172a]"
               style={{ fontSize: "44px" }}

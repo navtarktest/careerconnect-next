@@ -31,9 +31,9 @@ function Dashboard() {
 
       <Navbar />
 
-      <div className="max-w-5xl mx-auto px-6 py-20">
+      <div className="cc-page-container max-w-5xl mx-auto px-6 py-20">
 
-        <div className="bg-white rounded-3xl shadow-xl p-12 border border-gray-200">
+        <div className="cc-page-card bg-white rounded-3xl shadow-xl p-12 border border-gray-200">
 
           <h1 className="text-5xl font-extrabold text-[#0f172a] mb-8">
 

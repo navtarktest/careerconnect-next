@@ -113,6 +113,94 @@ img {
     border-radius: 18px !important;
   }
 
+  .cc-page-container,
+  .cc-form-page-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 48px 16px 56px !important;
+  }
+
+  .cc-page-header {
+    margin-bottom: 30px !important;
+  }
+
+  .cc-page-header h1,
+  .cc-form-header h1 {
+    font-size: 34px !important;
+    line-height: 1.15 !important;
+  }
+
+  .cc-page-header p,
+  .cc-form-header p {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  .cc-page-card,
+  .cc-form-card,
+  .cc-stat-card,
+  .cc-job-filter,
+  .cc-job-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px !important;
+    border-radius: 18px !important;
+  }
+
+  .cc-stat-card {
+    margin-bottom: 8px;
+  }
+
+  .cc-job-filter {
+    margin-bottom: 34px !important;
+  }
+
+  .cc-job-filter-grid,
+  .cc-jobs-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  .cc-page-card,
+  .cc-page-card p,
+  .cc-page-card span,
+  .cc-job-card {
+    overflow-wrap: anywhere;
+  }
+
+  .cc-dashboard-job-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 24px !important;
+  }
+
+  .cc-dashboard-actions {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .cc-dashboard-actions a,
+  .cc-dashboard-actions button {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .cc-form-card input,
+  .cc-form-card select,
+  .cc-form-card textarea,
+  .cc-form-card button,
+  .cc-job-filter input,
+  .cc-job-filter select {
+    width: 100% !important;
+  }
+
+  .cc-job-details-card h1 {
+    font-size: 34px !important;
+    line-height: 1.15 !important;
+  }
+
   .flex.justify-center > [style*="max-width"],
   [style*="max-width: 576px"][style*="border-radius"],
   [style*="max-width: 850px"][style*="border-radius"],
@@ -257,8 +345,7 @@ img {
   .cc-section-header h2,
   .cc-cta h2,
   h1[style*="font-size: 72px"],
-  h2[style*="font-size: 48px"],
-  [style*="font-size: 48px"] {
+  h2[style*="font-size: 48px"] {
     font-size: 34px !important;
     line-height: 1.18 !important;
   }
@@ -401,11 +488,69 @@ img {
 
   .cc-section-header h2,
   .cc-cta h2,
+  .cc-page-header h1,
+  .cc-form-header h1,
+  .cc-job-details-card h1,
   h2[style*="font-size: 48px"] {
     font-size: 30px !important;
   }
 
   .cc-home-card {
     padding: 22px !important;
+  }
+
+  .cc-page-container,
+  .cc-form-page-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .cc-page-card,
+  .cc-form-card,
+  .cc-stat-card,
+  .cc-job-filter,
+  .cc-job-card {
+    padding: 22px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body .cc-page-container,
+  body .cc-form-page-container {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 48px 16px 56px !important;
+  }
+
+  body .cc-page-card,
+  body .cc-form-card,
+  body .cc-stat-card,
+  body .cc-job-filter,
+  body .cc-job-card {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 22px !important;
+    border-radius: 18px !important;
+  }
+
+  body .cc-dashboard-job-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  body .cc-dashboard-actions {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  body .cc-dashboard-actions a,
+  body .cc-dashboard-actions button {
+    width: 100% !important;
+    min-width: 0 !important;
   }
 }

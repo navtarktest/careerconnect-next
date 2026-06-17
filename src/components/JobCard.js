@@ -6,7 +6,7 @@ function JobCard({ job }) {
   return (
 
     <div
-      className="flex flex-col border border-gray-200 bg-white transition duration-300 hover:shadow-2xl"
+      className="cc-job-card flex flex-col border border-gray-200 bg-white transition duration-300 hover:shadow-2xl"
       style={{ minHeight: "384px", borderRadius: "22px", padding: "32px" }}
     >
 
