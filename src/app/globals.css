@@ -39,6 +39,11 @@ img {
   max-width: 100%;
 }
 
+.cc-navbar-toggle,
+.cc-mobile-menu {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .cc-navbar-inner,
   .cc-home-container,
@@ -128,26 +133,106 @@ img {
     font-size: 24px !important;
   }
 
-  .cc-navbar-menu {
+  .cc-navbar-desktop-menu,
+  .cc-navbar-desktop-actions {
+    display: none !important;
+  }
+
+  .cc-navbar-toggle {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgb(15 23 42 / 8%);
+  }
+
+  .cc-navbar-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 999px;
+    background: #0f172a;
+    transition: transform 180ms ease, opacity 180ms ease;
+  }
+
+  .cc-navbar-toggle.is-open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .cc-navbar-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .cc-navbar-toggle.is-open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .cc-mobile-menu {
     order: 3;
-    display: flex !important;
+    display: none;
     width: 100%;
-    gap: 16px !important;
-    overflow-x: auto;
-    padding: 4px 0 2px;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid #eef2f7;
+    padding: 14px 0 4px;
+  }
+
+  .cc-mobile-menu.is-open {
+    display: flex;
+  }
+
+  .cc-mobile-menu a,
+  .cc-mobile-menu button {
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+    border-radius: 12px;
+    padding: 0 14px;
+    color: #0f172a;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .cc-mobile-menu a:hover {
+    background: #f8fafc;
+    color: #2563eb;
+  }
+
+  .cc-mobile-menu-actions {
+    display: grid;
+    gap: 10px;
+    margin-top: 4px;
+    padding-top: 12px;
+    border-top: 1px solid #eef2f7;
+  }
+
+  .cc-mobile-menu-actions p {
+    overflow: hidden;
+    color: #475569;
     font-size: 14px;
+    font-weight: 600;
+    text-overflow: ellipsis;
     white-space: nowrap;
   }
 
-  .cc-navbar-actions {
-    gap: 10px !important;
+  .cc-mobile-menu-actions a:last-child,
+  .cc-mobile-menu-actions button {
+    justify-content: center;
+    background: #2563eb;
+    color: #ffffff;
   }
 
-  .cc-navbar-actions a,
-  .cc-navbar-actions button {
-    padding: 10px 12px !important;
-    border-radius: 10px !important;
-    font-size: 14px !important;
+  .cc-mobile-menu-actions button {
+    width: 100%;
+    border: 0;
+    background: #ef4444;
   }
 
   .cc-hero,
@@ -310,10 +395,6 @@ img {
 }
 
 @media (max-width: 420px) {
-  .cc-navbar-menu {
-    gap: 12px !important;
-  }
-
   .cc-hero h1 {
     font-size: 40px !important;
   }
