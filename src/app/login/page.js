@@ -83,13 +83,13 @@ function Login() {
       <Navbar />
 
       <main
-        className="flex justify-center px-6"
+        className="cc-auth-main flex justify-center px-6"
         style={{ paddingTop: "80px", paddingBottom: "80px" }}
       >
 
         <div
-          className="w-full border border-gray-200 bg-white shadow-xl shadow-gray-200/80"
-          style={{ maxWidth: "576px", borderRadius: "22px", padding: "40px" }}
+          className="cc-auth-card w-full border border-gray-200 bg-white shadow-xl shadow-gray-200/80"
+          style={{ maxWidth: "576px", borderRadius: "22px", padding: "clamp(24px, 6vw, 40px)" }}
         >
 
           {/* Heading */}

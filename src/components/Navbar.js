@@ -28,10 +28,10 @@ function Navbar() {
 
   return (
 
-    <nav className="bg-white shadow-sm border-b border-gray-100">
+    <nav className="cc-navbar bg-white shadow-sm border-b border-gray-100">
 
       <div
-        className="mx-auto flex items-center justify-between px-6 xl:px-0"
+        className="cc-navbar-inner mx-auto flex items-center justify-between px-6 xl:px-0"
         style={{ maxWidth: "1224px", height: "88px" }}
       >
 
@@ -47,7 +47,7 @@ function Navbar() {
         </Link>
 
         {/* Menu */}
-        <div className="hidden md:flex items-center gap-10 font-semibold text-[#0f172a]">
+        <div className="cc-navbar-menu hidden md:flex items-center gap-10 font-semibold text-[#0f172a]">
 
           <Link
             href="/"
@@ -109,7 +109,7 @@ function Navbar() {
         </div>
 
         {/* Right Side */}
-        <div className="flex items-center gap-4">
+        <div className="cc-navbar-actions flex items-center gap-4">
 
           {user ? (
 

@@ -33,18 +33,45 @@ const handleSearch = () => {
 
   return (
 
-    <section className="bg-[#f8fafc] min-h-[90vh] flex items-center">
+    <section
+      className="cc-hero bg-[#f8fafc]"
+      style={{ backgroundColor: "#f8fafc", paddingTop: "116px", paddingBottom: "132px" }}
+    >
 
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div
+        className="cc-hero-grid mx-auto grid items-center"
+        style={{
+          maxWidth: "1232px",
+          gridTemplateColumns: "560px 576px",
+          gap: "96px",
+        }}
+      >
 
         {/* LEFT */}
-        <div>
+        <div className="cc-hero-copy">
 
-          <p className="text-blue-600 font-semibold mb-5 text-lg">
+          <p
+            className="font-semibold text-blue-600"
+            style={{
+              color: "#2563eb",
+              marginBottom: "34px",
+              fontSize: "18px",
+              fontWeight: 700,
+            }}
+          >
             #1 Job Portal Platform
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight text-[#0f172a]">
+          <h1
+            className="font-extrabold text-[#0f172a]"
+            style={{
+              color: "#0f172a",
+              fontSize: "72px",
+              lineHeight: "1.25",
+              fontWeight: 800,
+              letterSpacing: "0",
+            }}
+          >
 
             Find Your
             <span className="text-blue-600">
@@ -56,7 +83,15 @@ const handleSearch = () => {
 
           </h1>
 
-          <p className="mt-8 text-gray-600 text-xl leading-relaxed">
+          <p
+            className="text-gray-600"
+            style={{
+              color: "#334155",
+              marginTop: "36px",
+              fontSize: "20px",
+              lineHeight: "32px",
+            }}
+          >
 
             Connect with top companies and discover opportunities
             that match your skills, passion, and career goals.
@@ -64,7 +99,18 @@ const handleSearch = () => {
           </p>
 
           {/* Search Box */}
-<div className="mt-10 bg-white shadow-2xl rounded-3xl p-4 flex flex-col md:flex-row items-center gap-4 max-w-3xl">
+<div
+  className="cc-hero-search flex items-center bg-white shadow-2xl shadow-gray-200/80"
+  style={{
+    display: "flex",
+    alignItems: "center",
+    marginTop: "44px",
+    width: "584px",
+    gap: "16px",
+    padding: "16px",
+    borderRadius: "20px",
+  }}
+>
 
   {/* Search Input */}
   <input
@@ -74,7 +120,15 @@ const handleSearch = () => {
     onChange={(e) =>
       setSearch(e.target.value)
     }
-    className="flex-1 w-full border border-gray-200 rounded-2xl px-5 h-16 outline-none focus:border-blue-500 text-lg"
+    className="border border-gray-200 px-4 outline-none transition focus:border-blue-500"
+    data-responsive-input="true"
+    style={{
+      width: "170px",
+      height: "64px",
+      borderRadius: "14px",
+      fontSize: "18px",
+      padding: "0 22px",
+    }}
   />
 
   {/* Location Input */}
@@ -85,13 +139,31 @@ const handleSearch = () => {
     onChange={(e) =>
       setLocation(e.target.value)
     }
-    className="flex-1 w-full border border-gray-200 rounded-2xl px-5 h-16 outline-none focus:border-blue-500 text-lg"
+    className="border border-gray-200 px-4 outline-none transition focus:border-blue-500"
+    data-responsive-input="true"
+    style={{
+      width: "170px",
+      height: "64px",
+      borderRadius: "14px",
+      fontSize: "18px",
+      padding: "0 22px",
+    }}
   />
 
   {/* Search Button */}
   <button
     onClick={handleSearch}
-    className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-10 h-16 rounded-2xl font-bold text-lg transition"
+    className="bg-blue-600 font-bold text-white transition hover:bg-blue-700"
+    data-responsive-button="true"
+    style={{
+      backgroundColor: "#2563eb",
+      color: "#ffffff",
+      width: "180px",
+      height: "64px",
+      borderRadius: "14px",
+      fontSize: "18px",
+      fontWeight: 800,
+    }}
   >
 
     Search Jobs
@@ -103,7 +175,7 @@ const handleSearch = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="hidden md:flex justify-center">
+        <div className="cc-hero-media hidden md:flex justify-center">
 
           <Image
             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
@@ -111,7 +183,8 @@ const handleSearch = () => {
             width={640}
             height={600}
             priority
-            className="rounded-3xl shadow-2xl w-full max-w-xl h-[600px] object-cover"
+            className="object-cover shadow-2xl shadow-gray-300/80"
+            style={{ width: "576px", height: "600px", borderRadius: "20px", objectFit: "cover" }}
           />
 
         </div>

@@ -24,3 +24,307 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .cc-navbar-inner,
+  .cc-home-container,
+  .cc-footer-container,
+  .cc-hero-grid,
+  [style*="max-width: 1224px"],
+  [style*="max-width: 1232px"] {
+    max-width: calc(100% - 48px) !important;
+  }
+
+  .cc-hero-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 56px !important;
+  }
+
+  .cc-hero-copy {
+    max-width: 680px;
+  }
+
+  .cc-hero-media {
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
+
+  .cc-hero-media img {
+    width: 100% !important;
+    max-width: 680px !important;
+    height: 440px !important;
+  }
+
+  .cc-card-grid,
+  .cc-footer-grid,
+  [style*="grid-template-columns"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .cc-footer-grid {
+    row-gap: 48px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .cc-navbar-inner,
+  .cc-home-container,
+  .cc-footer-container,
+  .cc-hero-grid,
+  [style*="max-width: 576px"],
+  [style*="max-width: 900px"],
+  [style*="max-width: 1224px"],
+  [style*="max-width: 1232px"] {
+    width: calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+  }
+
+  form {
+    width: 100% !important;
+  }
+
+  .cc-auth-main {
+    padding: 48px 16px !important;
+  }
+
+  .cc-auth-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px !important;
+    border-radius: 18px !important;
+  }
+
+  .flex.justify-center > [style*="max-width"],
+  [style*="max-width: 576px"][style*="border-radius"],
+  [style*="max-width: 850px"][style*="border-radius"],
+  [style*="max-width: 976px"][style*="border-radius"] {
+    width: 100% !important;
+    max-width: calc(100vw - 32px) !important;
+  }
+
+  .cc-navbar-inner {
+    height: auto !important;
+    min-height: 76px;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 16px 0 !important;
+  }
+
+  .cc-navbar a[style*="font-size: 30px"] {
+    font-size: 24px !important;
+  }
+
+  .cc-navbar-menu {
+    order: 3;
+    display: flex !important;
+    width: 100%;
+    gap: 16px !important;
+    overflow-x: auto;
+    padding: 4px 0 2px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .cc-navbar-actions {
+    gap: 10px !important;
+  }
+
+  .cc-navbar-actions a,
+  .cc-navbar-actions button {
+    padding: 10px 12px !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+  }
+
+  .cc-hero,
+  .cc-home-section,
+  .cc-cta {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+
+  .cc-hero-grid,
+  .cc-card-grid,
+  .cc-footer-grid,
+  [style*="grid-template-columns"] {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 24px !important;
+  }
+
+  .cc-section-header {
+    margin-bottom: 36px !important;
+  }
+
+  .cc-section-header h2,
+  .cc-cta h2,
+  h1[style*="font-size: 72px"],
+  h2[style*="font-size: 48px"],
+  [style*="font-size: 48px"] {
+    font-size: 34px !important;
+    line-height: 1.18 !important;
+  }
+
+  .cc-hero h1 {
+    font-size: 46px !important;
+    line-height: 1.14 !important;
+  }
+
+  .cc-section-header p,
+  .cc-hero p,
+  .cc-cta p,
+  [style*="font-size: 20px"],
+  [style*="font-size: 22px"] {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  .cc-cta p {
+    white-space: normal !important;
+  }
+
+  .cc-hero-media {
+    display: flex !important;
+  }
+
+  .cc-hero-media img {
+    width: 100% !important;
+    height: 320px !important;
+    border-radius: 18px !important;
+  }
+
+  .cc-hero-search {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+    padding: 14px !important;
+    border-radius: 18px !important;
+  }
+
+  .cc-hero-search input,
+  .cc-hero-search button,
+  [data-responsive-input="true"],
+  [data-responsive-button="true"] {
+    width: 100% !important;
+    height: 54px !important;
+    font-size: 15px !important;
+  }
+
+  .cc-home-card {
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 28px !important;
+    border-radius: 18px !important;
+  }
+
+  .cc-home-card h3,
+  [style*="font-size: 26px"],
+  [style*="font-size: 30px"] {
+    font-size: 22px !important;
+    line-height: 28px !important;
+  }
+
+  .cc-home-card p,
+  [style*="font-size: 18px"] {
+    font-size: 15px !important;
+    line-height: 24px !important;
+  }
+
+  .cc-cta-actions {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .cc-cta-actions a {
+    width: 100% !important;
+    max-width: 280px !important;
+    height: 54px !important;
+    font-size: 16px !important;
+    border-radius: 14px !important;
+  }
+
+  .cc-footer {
+    padding-top: 56px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .cc-footer-grid {
+    column-gap: 0 !important;
+    row-gap: 34px !important;
+  }
+
+  .cc-footer input,
+  .cc-footer button {
+    width: 100% !important;
+  }
+
+  .cc-footer h2 {
+    font-size: 26px !important;
+  }
+
+  main,
+  .bg-\[\#f8fafc\] {
+    min-width: 0;
+  }
+
+  [style*="width: 384px"],
+  [style*="width: 576px"],
+  [style*="width: 584px"],
+  [style*="width: 440px"],
+  [style*="width: 389"],
+  [style*="width: 272px"],
+  [style*="width: 280px"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  [style*="height: 68px"],
+  [style*="height: 60px"] {
+    min-height: 54px !important;
+    height: auto !important;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+  }
+
+  [style*="padding: 48px"],
+  [style*="padding: 40px"],
+  [style*="padding: 36px"],
+  [style*="padding: 32px"],
+  [style*="padding: 30px"] {
+    padding: 24px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .cc-navbar-menu {
+    gap: 12px !important;
+  }
+
+  .cc-hero h1 {
+    font-size: 40px !important;
+  }
+
+  .cc-section-header h2,
+  .cc-cta h2,
+  h2[style*="font-size: 48px"] {
+    font-size: 30px !important;
+  }
+
+  .cc-home-card {
+    padding: 22px !important;
+  }
+}
